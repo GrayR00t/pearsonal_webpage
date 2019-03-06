@@ -22,5 +22,5 @@ def portfolio(request):
 
 def portfolio_details(request):
 
-    return render(request, 'blog/portfolio_details.html')
+    return render(request, 'blog/portfolio-details.html')
 

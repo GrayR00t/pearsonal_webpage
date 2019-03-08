@@ -114,3 +114,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#ubuntu stuff
+pkg-resources==0.0.0

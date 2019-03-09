@@ -28,7 +28,7 @@ SECRET_KEY = '1)#_@o6-itc9zoq2#i7p8h^*wc=j*)mqt7q6x_x=k+l@ps6&0l'
 #SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['grayrootresumeapp.herokuapp.com']
+ALLOWED_HOSTS = ['myresumeapp01.herokuapp.com']
 
 
 # Application definition
@@ -130,11 +130,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-
-# Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())

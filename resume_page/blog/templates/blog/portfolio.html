@@ -40,7 +40,7 @@
 		<div class="container main-menu">
 			<div class="row align-items-center d-flex">
 				<div id="logo">
-					<a href="index.html"><img src="{% static 'blog/img/logo.png' %}" alt="" title="" /></a>
+					<a href="{% url 'index' %}"><img src="{% static 'blog/img/logo.png' %}" alt="" title="" /></a>
 				</div>
 				<nav id="nav-menu-container">
 					<ul class="nav-menu">
@@ -94,9 +94,7 @@
 			<div class="row d-flex justify-content-between align-items-end mb-80">
 				<div class="col-lg-6">
 					<div class="section-title">
-						<h2>Latest Works</h2>
-						<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see
-							some for as low as $.17 each.</p>
+						<h2>My Projects</h2>
 					</div>
 				</div>
 
@@ -104,9 +102,9 @@
 					<div class="filters">
 						<ul>
 							<li class="active" data-filter=".all">All Categories</li>
-							<li data-filter=".branding">Branding</li>
-							<li data-filter=".creative">Creative Work</li>
-							<li data-filter=".web-design">Web Design</li>
+							<li data-filter=".branding">Open Source Projects</li>
+							<li data-filter=".creative">Internet of Things</li>
+							<li data-filter=".web-design">Biomedical Device</li>
 						</ul>
 					</div>
 				</div>
@@ -118,78 +116,85 @@
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="{% static 'blog/img/work/w1.jpg' %}" alt="">
+								<img class="image img-fluid" src="{% static 'blog/img/work/food_protection.png' %}" alt="">
 							</div>
 							<div class="middle">
-								<h4>2D Vinyl Design</h4>
-								<div class="cat">Client Project</div>
+								<h4>Automated Food Grain Protection</h4>
+								<div class="cat">Developing solutions for farmers to protect their grains</div>
 							</div>
-							<a class="overlay" href="{% url 'portfolio_details' %}"></a>
+							<a class="overlay" href="https://github.com/GrayR00t/automated_food_grain_protection"></a>
 						</div>
 					</div>
 					<div class="single-work col-lg-4 col-md-6 col-sm-12 all web-design branding wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="{% static 'blog/img/work/w2.jpg' %}" alt="">
+								<img class="image img-fluid" src="{% static 'blog/img/work/vision.webp' %}" alt="">
 							</div>
 							<div class="middle">
-								<h4>2D Vinyl Design</h4>
-								<div class="cat">Client Project</div>
+								<h4>Computer Vision</h4>
+								<div class="cat">Some OpenCv related projets.</div>
 							</div>
-							<a class="overlay" href="{% url 'portfolio_details' %}"></a>
+							<a class="overlay" href="https://github.com/GrayR00t/Computervision_bootcamp"></a>
 						</div>
 					</div>
 					<div class="single-work col-lg-4 col-md-6 col-sm-12 all branding web-design wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="{% static 'blog/img/work/w3.jpg' %}" alt="">
+								<img class="image img-fluid" src="{% static 'blog/img/work/teaching.jpg' %}" alt="">
 							</div>
 							<div class="middle">
-								<h4>2D Vinyl Design</h4>
-								<div class="cat">Client Project</div>
+								<h4>Teaching Assistant Robot
+
+								 </h4>
+								<div class="cat">Writing code for Robotic intraction with the real world.</div>
 							</div>
-							<a class="overlay" href="{% url 'portfolio_details' %}"></a>
+							<a class="overlay" href="https://github.com/GrayR00t/My_World/tree/master/teaching_assistant_robot"></a>
 						</div>
 					</div>
 					<div class="single-work col-lg-4 col-md-6 col-sm-12 all web-design wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="{% static 'blog/img/work/w6.jpg' %}" alt="">
+								<img class="image img-fluid" src="{% static 'blog/img/work/machine2.png' %}" alt="">
 							</div>
+							<p>
+
+
+							</p>
 							<div class="middle">
-								<h4>2D Vinyl Design</h4>
-								<div class="cat">Client Project</div>
+								<h4>Machine Learning</h4>
+								<div class="cat">Some projects done while learning machine learning.</div>
+								
 							</div>
-							<a class="overlay" href="{% url 'portfolio_details' %}"></a>
+							<a class="overlay" href="https://github.com/GrayR00t/ml_projects"></a>
 						</div>
 					</div>
 					<div class="single-work col-lg-4 col-md-6 col-sm-12 all creative wow fadeInUp" data-wow-duration="2s">
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="{% static 'blog/img/work/w4.jpg' %}" alt="">
+								<img class="image img-fluid" src="{% static 'blog/img/work/biomedical1.jpg' %}" alt="">
 							</div>
 							<div class="middle">
-								<h4>2D Vinyl Design</h4>
-								<div class="cat">Client Project</div>
+								<h4>Biomedical Device</h4>
+								<div class="cat">A non-invasive device for rapid screening of diabetic patient</div>
 							</div>
-							<a class="overlay" href="{% url 'portfolio_details' %}"></a>
+							<a class="overlay" href="https://angel.co/projects/877788-non-invasive-device-to-measure-glucose-concentration-in-blood?src=user_profile"></a>
 						</div>
 					</div>
 					<div class="single-work col-lg-4 col-md-6 col-sm-12 all branding wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
 						<div class="relative">
 							<div class="thumb">
 								<div class="overlay overlay-bg"></div>
-								<img class="image img-fluid" src="{% static 'blog/img/work/w5.jpg' %}" alt="">
+								<img class="image img-fluid" src="{% static 'blog/img/work/acl.svg' %}" alt="">
 							</div>
 							<div class="middle">
-								<h4>2D Vinyl Design</h4>
-								<div class="cat">Client Project</div>
+								<h4>Attendence on Command Line</h4>
+								<div class="cat">To see our college attendance and result through command line</div>
 							</div>
-							<a class="overlay" href="{% url 'portfolio_details' %}"></a>
+							<a class="overlay" href="https://github.com/GrayR00t/acl-1"></a>
 						</div>
 					</div>
 				</div>
